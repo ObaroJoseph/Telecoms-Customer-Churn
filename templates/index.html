@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churn Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Churn Prediction Form</h1>
+    <form action="/predict" method="POST">
+        <label for="call_failure">Call Failures:</label>
+        <input type="number" id="call_failure" name="call_failure" min="0" step="1" required>
+
+        <label for="complains">Complains:</label>
+        <select id="complains" name="complains" required>
+            <option value="0">No Complaint</option>
+            <option value="1">Complaint</option>
+        </select>
+
+        <label for="subscription_length">Subscription Length:</label>
+        <input type="number" id="subscription_length" name="subscription_length" min="0" step="1" required>
+
+        <label for="charge_amount">Charge Amount:</label>
+        <input type="number" id="charge_amount" name="charge_amount" min="0" max="9" required>
+
+        <label for="seconds_of_use">Seconds of Use:</label>
+        <input type="number" id="seconds_of_use" name="seconds_of_use" min="0" step="1" required>
+
+        <label for="frequency_of_use">Frequency of Use:</label>
+        <input type="number" id="frequency_of_use" name="frequency_of_use" min="0" step="1" required>
+
+        <label for="frequency_of_sms">Frequency of SMS:</label>
+        <input type="number" id="frequency_of_sms" name="frequency_of_sms" min="0" step="1" required>
+
+        <label for="distinct_called_numbers">Distinct Called Numbers:</label>
+        <input type="number" id="distinct_called_numbers" name="distinct_called_numbers" min="0" step="1" required>
+
+        <label for="age_group">Age Group:</label>
+        <select id="age_group" name="age_group" required>
+            <option value="1">Less than 15</option>
+            <option value="2">16-25</option>
+            <option value="3">26-30</option>
+            <option value="4">31-45</option>
+            <option value="5">46 and above</option>
+        </select>
+
+        <label for="tariff_plan">Tariff Plan:</label>
+        <select id="tariff_plan" name="tariff_plan" required>
+            <option value="1">Pay as you go</option>
+            <option value="2">Contractual</option>
+        </select>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="1">Active</option>
+            <option value="2">Non-active</option>
+        </select>
+
+        <label for="customer_value">Customer Value:</label>
+        <input type="number" id="customer_value" name="customer_value" min="0" step="0.01" required>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
