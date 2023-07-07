@@ -6,6 +6,6 @@ matplotlib
 plotly-express
 imbalanced-learn
 gunicorn
-waitress==2.1.0
+
 
 
