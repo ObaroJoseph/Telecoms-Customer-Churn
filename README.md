@@ -15,7 +15,7 @@ This project aims to showcase an end-to-end implementation of a machine learning
 - [Software and Tools Requirement](#software-and-tools-requirement)
 - [About Data](#about-data)
 - [Data Cleaning](#data-cleaning)
-- [Exploratory Data Analysis](##exploratory-data-analysis)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Model Selection, Training, and Evaluation](#model-selection-training-and-evaluation)
 - [Pickle the Model](#pickle-the-model)
 - [Flask Application and VS Code Setup](#flask-application-and-vs-code-setup)
@@ -253,7 +253,6 @@ Deploy the Dockerized Flask application to Heroku.
 ![Alt text](image-3.png)
 
 ![Alt text](image-4.png)
-gir
 
 
 
