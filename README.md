@@ -118,7 +118,7 @@ data = df.drop_duplicates()
 
 # Exploratory Data Analysis
 
-To perform Exploratory data analysis, **Matplotlib, plotly and Seaborn** were employed to generate insights. During the analysis, it was observed that the dataset exhibited a significant class imbalance. The majority class, labeled as "not Churn" (0), accounted for approximately 84% of the data points, while the minority class, labeled as "Churned" (1), comprised only around 20% of the datapoints. To overcome this class imbalance challenge, our machine learning algorithms incorporated the SMOTENN (Synthetic Minority Over-sampling Technique combined with Edited Nearest Neighbors) technique. 
+To perform Exploratory data analysis, **Matplotlib, plotly and Seaborn** were employed to generate insights. During the analysis, it was observed that the dataset exhibited a significant class imbalance. The majority class, labeled as "not Churn" (0), accounted for approximately 84% of the data points, while the minority class, labeled as "Churned" (1), comprised only around 16% of the datapoints. To overcome this class imbalance challenge, our machine learning algorithms incorporated the SMOTENN (Synthetic Minority Over-sampling Technique combined with Edited Nearest Neighbors) technique. Other Obsevations can be seen in [Here](https://github.com/ObaroJoseph/Customer-Churn/blob/main/Exploratory%20Analysis.ipynb)
 
 
 ![Alt text](image.png)
