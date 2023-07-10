@@ -1,6 +1,6 @@
 # Customer-Churn
 
-![](customer.png)
+![](image-5.png)
 
 
 This project aims to showcase an end-to-end implementation of a machine learning project, focusing on customer churn prediction. By leveraging various technologies and tools such as Dockers,Flask, GitHub Actions, and Heroku.
@@ -35,41 +35,31 @@ This project focuses on utilizing machine learning techniques to predict custome
 To showcase this complete end-to-end implementation, Dockers was integrated to create portable and scalable containers, GitHub Actions for automated build, test, and deployment processes, and deployed the application on Heroku for easy access and usage.
 
 # Skills Demonstrated 
-- Proficiency in machine learning techniques for customer churn prediction
-
+- Proficiency in machine learning techniques
 - Data preprocessing and feature engineering
-
 - Model selection, training, and evaluation
-
 - Integration of Docker containers for portability and scalability
-
 - Implementation of GitHub Actions for automated build, test, and deployment processes
-
 - Deployment of the web application on Heroku
-
 - Utilization of Flask for web application development
-
 - Configuration and usage of YAML files for workflow automation
-
 - Data analysis and interpretation for gaining insights
-
 - Effective documentation and communication of the project
-
 - Problem-solving and addressing real-world challenges through machine learning
 
 # Project Structure
 A brief description of each major file and folder, specifying their purpose and functionality within the project.
 
-- **Exploratory Analysis.ipynb:** This Jupyter Notebook file contains the code and analysis for the exploratory data analysis (EDA) phase of the project. It explores the dataset, performs data visualization, and gains insights into the customer churn problem.
-- **Model Building.ipynb:** This Jupyter Notebook file contains the code for building and training the machine learning model.
-- **model.pkl:** This file is the serialized form of the trained machine learning model. It is saved as a pickle file and is used for making predictions on new data.
-- **app.py (Flask):** This Python file contains the implementation of the web application using the Flask framework. It sets up the routes, handles user inputs, and utilizes the trained model to make churn predictions.
-- **index.html:** This HTML file serves as the main entry point of the web application. It typically contains the user interface elements, such as forms or input fields, allowing users to provide the necessary information for churn prediction.
-- **result.html:** This HTML file is responsible for displaying the churn prediction results to the user. Once the user submits the necessary information, the web application processes the inputs using the trained machine learning model.
-- **procfile:** This file is used for Heroku deployment. It specifies the command to start the web application server, in this case, a Flask server, when the application is deployed on Heroku.
-- **Dockerfile:** The Dockerfile is used to create a Docker image of the project. It specifies the base image, environment configurations, and instructions to set up the application within a Docker container.
-- **main.yaml:** This is a configuration file for GitHub Actions. It defines the workflow for continuous integration and delivery, specifying the steps to build, test, and deploy the application automatically.
--**requirements.txt:** This text file lists all the dependencies and libraries required for running the project. It ensures that the required packages are installed in the environment to execute the code successfully.
+- **[Exploratory Analysis.ipynb](https://github.com/ObaroJoseph/Customer-Churn/blob/main/Exploratory%20Analysis.ipynb)** This Jupyter Notebook file contains the code and analysis for the exploratory data analysis (EDA) phase of the project. It explores the dataset, performs data visualization, and gains insights into the customer churn problem.
+- **[Model Building.ipynb](https://github.com/ObaroJoseph/Customer-Churn/blob/main/Model%20Building.ipynb)** This Jupyter Notebook file contains the code for building and training the machine learning model.
+- **[model.pkl](https://github.com/ObaroJoseph/Customer-Churn/blob/main/model.pkl)** This file is the serialized form of the trained machine learning model. It is saved as a pickle file and is used for making predictions on new data.
+- **[app.py (Flask)](https://github.com/ObaroJoseph/Customer-Churn/blob/main/app.py)** This Python file contains the implementation of the web application using the Flask framework. It sets up the routes, handles user inputs, and utilizes the trained model to make churn predictions.
+- **[index.html](https://github.com/ObaroJoseph/Customer-Churn/blob/main/templates/index.html)** This HTML file serves as the main entry point of the web application. It typically contains the user interface elements, such as forms or input fields, allowing users to provide the necessary information for churn prediction.
+- **[result.html](https://github.com/ObaroJoseph/Customer-Churn/blob/main/templates/result.html)** This HTML file is responsible for displaying the churn prediction results to the user. Once the user submits the necessary information, the web application processes the inputs using the trained machine learning model.
+- **[procfile](https://github.com/ObaroJoseph/Customer-Churn/blob/main/Procfile)** This file is used for Heroku deployment. It specifies the command to start the web application server, in this case, a Flask server, when the application is deployed on Heroku.
+- **[Dockerfile](https://github.com/ObaroJoseph/Customer-Churn/blob/main/Dockerfile)** The Dockerfile is used to create a Docker image of the project. It specifies the base image, environment configurations, and instructions to set up the application within a Docker container.
+- **[main.yaml](https://github.com/ObaroJoseph/Customer-Churn/blob/main/.github/workflows/main.yaml)** This is a configuration file for GitHub Actions. It defines the workflow for continuous integration and delivery, specifying the steps to build, test, and deploy the application automatically.
+-**[requirements.txt](https://github.com/ObaroJoseph/Customer-Churn/blob/main/requirements.txt)** This text file lists all the dependencies and libraries required for running the project. It ensures that the required packages are installed in the environment to execute the code successfully.
 
 # Software and Tools Requirement 
 1. [Github Account](https//:github.com)
@@ -85,29 +75,18 @@ Link to obatin the dataset: https://archive.ics.uci.edu/dataset/563/iranian+chur
 
 **Attribute Information**
 
-Call Failures: number of call failures
-
-Complains: binary (0: No complaint, 1: complaint)
-
-Subscription Length: total months of subscription
-
-Charge Amount: Ordinal attribute (0: lowest amount, 9: highest amount)
-
-Seconds of Use: total seconds of calls
-
-Frequency of use: total number of calls
-
-Frequency of SMS: total number of text messages
-
-Distinct Called Numbers: total number of distinct phone calls 
-
-Age Group: ordinal attribute (1: younger age, 5: older age)
-
-Status: binary (1: active, 2: non-active)
-
-Churn: binary (1: churn, 0: non-churn) - Class label
-
-Customer Value: The calculated value of customer
+- Call Failures: number of call failures
+- Complains: binary (0: No complaint, 1: complaint)
+- Subscription Length: total months of subscription
+- Charge Amount: Ordinal attribute (0: lowest amount, 9: highest amount)
+-Seconds of Use: total seconds of calls
+- Frequency of use: total number of calls
+- Frequency of SMS: total number of text messages
+- Distinct Called Numbers: total number of distinct phone calls 
+- Age Group: ordinal attribute (1: younger age, 5: older age)
+- Status: binary (1: active, 2: non-active)
+- Churn: binary (1: churn, 0: non-churn) - Class label
+- Customer Value: The calculated value of customer
    
 
 
@@ -274,7 +253,7 @@ Deploy the Dockerized Flask application to Heroku.
 ![Alt text](image-3.png)
 
 ![Alt text](image-4.png)
-
+gir
 
 
 
