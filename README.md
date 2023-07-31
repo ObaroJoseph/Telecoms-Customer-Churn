@@ -1,6 +1,6 @@
 # Customer-Churn
 
-![](image-5.png)
+![](images/image-5.png)
 
 
 This project aims to showcase an end-to-end implementation of a machine learning project, focusing on customer churn prediction. By leveraging various technologies and tools such as Dockers,Flask, GitHub Actions, and Heroku.
@@ -121,7 +121,7 @@ data = df.drop_duplicates()
 To perform Exploratory data analysis, **Matplotlib, plotly and Seaborn** were employed to generate insights. During the analysis, it was observed that the dataset exhibited a significant class imbalance. The majority class, labeled as "not Churn" (0), accounted for approximately 84% of the data points, while the minority class, labeled as "Churned" (1), comprised only around 16% of the datapoints. To overcome this class imbalance challenge, our machine learning algorithms incorporated the SMOTENN (Synthetic Minority Over-sampling Technique combined with Edited Nearest Neighbors) technique. Other Obsevations can be seen in [Here](https://github.com/ObaroJoseph/Customer-Churn/blob/main/Exploratory%20Analysis.ipynb)
 
 
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 # Model selection, training, and Evaluation
 
@@ -248,11 +248,11 @@ Deploy the Dockerized Flask application to Heroku.
 # Results and Demo:
 
 
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 
 
